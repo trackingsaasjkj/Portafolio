@@ -1,0 +1,23 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --deep-navy: #0B1F5B;
+  --sky-blue: #49C4FF;
+  --white: #FFFFFF;
+  --bg: #0B1F5B;
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+html, body, #root {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+canvas { display: block; width: 100% !important; height: 100% !important; outline: none; }
+
+::selection { background: rgba(73,196,255,0.22); color: var(--white); }
+::-webkit-scrollbar { width: 0; }
